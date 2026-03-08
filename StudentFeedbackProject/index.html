@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Feedback Form</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .container {
+      background: white;
+      width: 400px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 50px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px gray;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 90%;
+      padding: 8px;
+      margin: 8px;
+    }
+
+    button {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkgreen;
+    }
+  </style>
+
+  <script>
+
+    function submitForm() {
+      alert("Thank you for your feedback!");
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Student Feedback Form</h2>
+
+    <form onsubmit="submitForm()">
+
+      <input type="text" placeholder="Enter your name" required><br>
+
+      <input type="email" placeholder="Enter your email" required><br>
+
+      <select required>
+        <option value="">Select Course</option>
+        <option>Computer Science</option>
+        <option>AI & ML</option>
+        <option>Data Science</option>
+      </select><br>
+
+      <textarea placeholder="Write your feedback"></textarea><br>
+
+      <button type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
